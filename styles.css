@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input, select {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#task-input {
+    flex: 2;
+}
+
+#priority-select {
+    flex: 1;
+    margin-left: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#search-input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+li {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+li.completed {
+    background-color: rgba(0, 255, 0, 0.2);
+    text-decoration: line-through;
+}
+
+li button {
+    padding: 5px 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+li button:hover {
+    background-color: #ff1a1a;
+}
+
+.filters {
+    margin: 10px 0;
+}
+
+.filter-btn {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    background-color: #333;
+    color: white;
+}
+
+body.dark .filter-btn.active {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.priority-rendah {
+    border-left: 5px solid green;
+}
+
+.priority-sedang {
+    border-left: 5px solid orange;
+}
+
+.priority-tinggi {
+    border-left: 5px solid red;
+}
+
+.edit-mode {
+    background-color: rgba(255, 255, 0, 0.2);
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
