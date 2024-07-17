@@ -1,0 +1,31 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar kegiatan Lanjutan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Daftar Kegiatan</h1>
+        <button id="theme-toggle">Ubah Tema</button>
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Masukkan kegiatan baru">
+            <select id="priority-select">
+                <option value="rendah">Rendah</option>
+                <option value="sedang">Sedang</option>
+                <option value="tinggi">Tinggi</option>
+            </select>
+            <button type="submit">Tambah kegiatan</button>
+        </form>
+        <input type="text" id="search-input" placeholder="Cari kegiatan...">
+        <div class="filters">
+            <button id="all" class="filter-btn active">Semua</button>
+            <button id="completed" class="filter-btn">Selesai</button>
+            <button id="uncompleted" class="filter-btn">Belum Selesai</button>
+        </div>
+        <ul id="task-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
